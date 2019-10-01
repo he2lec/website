@@ -27,6 +27,9 @@
     "tailwindcss-transitions": "^2.1.0"
   },
   "devDependencies": {
+    "eslint-config-prettier": "^6.3.0",
+    "eslint-config-react-app": "^5.0.2",
+    "eslint-plugin-prettier": "^3.1.1",
     "prettier": "^1.17.1",
     "tailwindcss": "^1.1.2"
   },
@@ -34,8 +37,12 @@
   "scripts": {
     "build": "gatsby build",
     "develop": "gatsby develop",
-    "format": "prettier --write src/**/*.{js,jsx}",
-    "start": "npm run develop",
+    "format": "prettier --write \"src/**/*.{js,jsx,json,md}\" \"*.js\"",
+    "format:check": "prettier --check \"src/**/*.{js,jsx,json,md}\" \"*.js\"",
+    "eslint": "eslint \"src/**/*.{js,jsx,json}\"",
+    "lint:fix": "eslint --fix \"src/**/*.{js,jsx,json}\"",
+    "lint": "yarn run eslint && yarn run format:check",
+    "clean": "gatsby clean",
     "serve": "gatsby serve"
   }
 }

@@ -5,18 +5,18 @@
  * See: https://www.gatsbyjs.org/docs/static-query/
  */
 
-import React from "react"
-import PropTypes from "prop-types"
-import { StaticQuery, graphql } from "gatsby"
-import styled from "@emotion/styled"
+import React from 'react';
+import PropTypes from 'prop-types';
+import { StaticQuery, graphql } from 'gatsby';
+import styled from '@emotion/styled';
 
-import "./layout.css"
+import './layout.css';
 
 const Content = styled.div`
   margin: 0 auto;
   max-width: 860px;
   padding-top: 0;
-`
+`;
 
 // const Footer = styled.footer`
 //   display: flex;
@@ -45,10 +45,10 @@ const Layout = ({ children }) => (
       </>
     )}
   />
-)
+);
 
 Layout.propTypes = {
   children: PropTypes.node.isRequired,
-}
+};
 
-export default Layout
+export default Layout;

@@ -1,13 +1,13 @@
-import { Link } from "gatsby"
-import styled from "@emotion/styled"
-import PropTypes from "prop-types"
-import React from "react"
+import { Link } from 'gatsby';
+import styled from '@emotion/styled';
+import PropTypes from 'prop-types';
+import React from 'react';
 
 const Content = styled.div`
   max-width: 860px;
   padding: 1rem 1.0875rem;
   font-size: 1.2rem;
-`
+`;
 
 const NavLink = styled(Link)`
   color: black;
@@ -17,7 +17,7 @@ const NavLink = styled(Link)`
   position: relative;
 
   ::after {
-    content: "";
+    content: '';
     position: absolute;
     width: 100%;
     transform: scaleX(0);
@@ -33,7 +33,7 @@ const NavLink = styled(Link)`
     transform: scaleX(1);
     transform-origin: bottom left;
   }
-`
+`;
 
 const GitHubLink = styled.a`
   color: black;
@@ -43,7 +43,7 @@ const GitHubLink = styled.a`
   position: relative;
 
   ::after {
-    content: "";
+    content: '';
     position: absolute;
     width: 100%;
     transform: scaleX(0);
@@ -59,18 +59,18 @@ const GitHubLink = styled.a`
     transform: scaleX(1);
     transform-origin: bottom left;
   }
-`
+`;
 
 const HomeLink = styled(NavLink)`
   margin-left: 0;
-`
+`;
 
 const SiteHeader = styled.header`
   background: transparent;
   display: flex;
   align-content: center;
   justify-content: center;
-`
+`;
 
 const Header = ({ siteTitle }) => (
   <SiteHeader>
@@ -86,14 +86,14 @@ const Header = ({ siteTitle }) => (
       </p>
     </Content>
   </SiteHeader>
-)
+);
 
 Header.propTypes = {
   siteTitle: PropTypes.string,
-}
+};
 
 Header.defaultProps = {
   siteTitle: ``,
-}
+};
 
-export default Header
+export default Header;

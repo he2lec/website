@@ -7,10 +7,10 @@
 // You can delete this file if you're not using it
 
 exports.onCreateWebpackConfig = ({ actions, loaders, getConfig }) => {
-  const config = getConfig()
+  const config = getConfig();
   config.node = {
-    fs: 'empty'
+    fs: 'empty',
   };
   // This will completely replace the webpack config with the modified object.
-  actions.replaceWebpackConfig(config)
-}
+  actions.replaceWebpackConfig(config);
+};
