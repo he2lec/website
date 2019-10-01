@@ -10,8 +10,11 @@ Tailwind CSS and Emotion JS, and automatically deployed on Netlify.
 
 ```sh
 # Clean and reset repository
-gatbsy clean
+yarn clean
 
 # Launch the website on localhost:8000
-gatsby develop
+yarn develop
+
+# Format with Prettier and ESlint
+yarn format
 ```
