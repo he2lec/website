@@ -77,8 +77,12 @@ const Header = ({ siteTitle }) => (
     <Content>
       <p>
         <HomeLink to="/">{siteTitle}</HomeLink>
-        <NavLink to="/blog">Blog</NavLink>
-        <GitHubLink href="https://github.com/niklasmtj/gatsby-starter-julia">GitHub</GitHubLink>
+        <NavLink to="/blog" className="bg-blue text-white mt-32">
+          Blog
+        </NavLink>
+        <GitHubLink href="https://github.com/niklasmtj/gatsby-starter-julia">
+          GitHub
+        </GitHubLink>
       </p>
     </Content>
   </SiteHeader>

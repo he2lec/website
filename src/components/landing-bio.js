@@ -2,12 +2,14 @@ import React from "react"
 import PropTypes from "prop-types"
 import { StaticQuery, graphql } from "gatsby"
 import styled from "@emotion/styled"
+import tw from "tailwind.macro"
 
 const Container = styled.div`
   text-align: center;
 `
 
 const OuterContainer = styled.div`
+  ${tw`text-white`}
   display: flex;
   align-items: center;
   justify-content: center;
