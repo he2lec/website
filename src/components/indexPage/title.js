@@ -9,12 +9,11 @@ const Container = styled.div`
 `;
 
 const OuterContainer = styled.div`
-  ${tw`text-white`}
+  ${tw`text-white mt-64`}
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: row;
-  height: 78vh;
 `;
 
 const Description = styled.p`
@@ -28,7 +27,7 @@ const NameHeader = styled.h1`
   margin-bottom: 0;
 `;
 
-const LandingBio = () => (
+const Title = () => (
   <StaticQuery
     query={graphql`
       query LandingSiteTitleQuery {
@@ -58,4 +57,4 @@ NameHeader.defaultProps = {
   siteTitle: ``,
 };
 
-export default LandingBio;
+export default Title;
