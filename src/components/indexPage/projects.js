@@ -8,7 +8,7 @@ const Container = styled.div`
 
 const Projects = () => (
   <Container>
-    <strong>Projets:</strong> Coming soon.
+    <strong>Projects:</strong> Coming soon.
   </Container>
 );
 

@@ -68,7 +68,7 @@ const NotFoundPage = () => (
       </Text>
       <Center>
         <Button>
-          <a href={withPrefix('/cv.pdf')}>Hire Me (Resume)</a>
+          <a href={withPrefix('/cv.pdf')}>Resume</a>
         </Button>
       </Center>
     </Container>

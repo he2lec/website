@@ -1,29 +1,29 @@
 import React from 'react';
 import styled from '@emotion/styled';
 import tw from 'tailwind.macro';
-import { Link } from 'gatsby';
+import { withPrefix } from 'gatsby';
 
 const Grid = styled.div`
-  ${tw`flex flex-wrap mb-4 mt-8`}
+  ${tw`flex flex-wrap -mx-3 overflow-hidden mb-4 mt-8 px-8`}
 `;
 
 const Column = styled.div`
-  ${tw`w-full sm:w-1/3 text-center`}
+  ${tw`my-3 px-3 overflow-hidden w-1/2 md:w-1/3 text-center`}
+`;
+
+const ColumnResp = styled(Column)`
+  ${tw`w-full`}
 `;
 
 const Button = styled.button`
-  ${tw`text-center bg-white rounded px-6 py-2 hover:bg-black hover:text-white`}
+  ${tw`text-center w-full bg-white rounded px-6 py-4 md:py-2 hover:bg-black hover:text-white`}
   &:hover > * {
     ${tw`text-white`}
   }
 `;
 
 const Block = styled.div`
-  ${tw`text-center bg-white rounded px-6 py-2 hover:bg-black hover:text-white inline-block`}
-`;
-
-const Small = styled.span`
-  ${tw`text-xs`}
+  ${tw`text-center text-base w-full bg-white rounded tracking-tighter px-1 py-4 md:py-2 hover:bg-black hover:text-white inline-block`}
 `;
 
 const Contact = () => (
@@ -38,15 +38,13 @@ const Contact = () => (
       </a>
     </Column>
     <Column>
-      <Link to="/cv.pdf">
+      <a href={withPrefix('/cv.pdf')}>
         <Button>Resume</Button>
-      </Link>
+      </a>
     </Column>
-    <Column>
-      <Block>
-        <Small>adrienhellec.pro@gmail.com</Small>
-      </Block>
-    </Column>
+    <ColumnResp>
+      <Block>adrienhellec.pro@gmail.com</Block>
+    </ColumnResp>
   </Grid>
 );
 
