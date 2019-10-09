@@ -1,4 +1,5 @@
 import React from 'react';
+import { withPrefix } from 'gatsby';
 
 import Layout from '../components/layout';
 import SEO from '../components/seo';
@@ -67,7 +68,7 @@ const NotFoundPage = () => (
       </Text>
       <Center>
         <Button>
-          <StyledLink to="/cv">Hire Me (Resume)</StyledLink>
+          <a href={withPrefix('/cv.pdf')}>Hire Me (Resume)</a>
         </Button>
       </Center>
     </Container>
