@@ -6,9 +6,12 @@
 [![GitHub issues](https://img.shields.io/github/issues/he2lec/website)](https://github.com/he2lec/website/issues)
 [![GitHub license](https://img.shields.io/github/license/he2lec/website)](https://github.com/he2lec/website/blob/master/LICENSE)
 
+[https://adrienhellec.fr](https://adrienhellec.fr)
+
 Profile website of Adrien Hellec, built using React JS/Gatsby (based on
 [gatsby-starter-julia](https://github.com/niklasmtj/gatsby-starter-julia)),
 Tailwind CSS and Emotion JS, and automatically deployed on Netlify.
+
 
 ## 🚀 Quick start
 
