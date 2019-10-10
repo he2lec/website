@@ -3,6 +3,7 @@ module.exports = {
     title: `Adrien Hellec`,
     description: `I am Adrien Hellec, a French engineer student in computer science loving DevOps and Full-Stack Web/Software developpement.`,
     author: `Adrien Hellec <adrienhellec.pro@gmail.com>`,
+    siteUrl: 'https://adrienhellec.fr',
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
