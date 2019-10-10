@@ -2,11 +2,11 @@ import React from 'react';
 import styled from '@emotion/styled';
 import tw from 'tailwind.macro';
 
-import yakosaImage from '../../images/yakosa.png';
-import exercisesImage from '../../images/exercises.png';
+import yakosaImage from '../../images/yakosa.jpg';
+import exercisesImage from '../../images/exercises.jpg';
 import spiderImage from '../../images/spider.jpg';
 
-const Title = styled.div`
+const Title = styled.h2`
   ${tw`text-white font-bold text-5xl mb-8`}
 `;
 

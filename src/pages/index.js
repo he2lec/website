@@ -88,6 +88,11 @@ const IndexPage = () => (
         `portofolio`,
         `etudes`,
         `studies`,
+        `skills`,
+        `skill`,
+        `competences`,
+        `contact`,
+        `email`,
       ]}
     />
     <Title />

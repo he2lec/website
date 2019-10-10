@@ -11,8 +11,8 @@ const Content = styled.div`
   font-family: Lato;
 `;
 
-const Big = styled.div`
-  ${tw`text-4xl sm:text-5xl font-bold mb-2`}
+const Big = styled.h2`
+  ${tw`text-4xl sm:text-5xl font-bold mb-4`}
 `;
 
 const Strong = styled.span`
