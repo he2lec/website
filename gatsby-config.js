@@ -1,7 +1,7 @@
 module.exports = {
   siteMetadata: {
     title: `Adrien Hellec`,
-    description: `Profile website of Adrien Hellec. I am a French engineer student in computer science. Loving DevOps and Full-Stack (Frontend and Backend) Web/Software developpement in Javascript.`,
+    description: `I am Adrien Hellec, a French engineer student in computer science loving DevOps and Full-Stack Web/Software developpement.`,
     author: `Adrien Hellec <adrienhellec.pro@gmail.com>`,
   },
   plugins: [

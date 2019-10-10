@@ -41,7 +41,7 @@ function SEO({ description, lang, meta, keywords, title }) {
         },
         {
           property: `og:title`,
-          content: title,
+          content: `${site.siteMetadata.title} - Software Engineer`,
         },
         {
           property: `og:description`,
