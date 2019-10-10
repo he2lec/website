@@ -20,7 +20,7 @@ const OuterContainer = styled.div`
   flex-direction: row;
 `;
 
-const Description = styled.h1`
+const Description = styled.h2`
   ${tw`p-0 mb-8 text-xl font-normal`}
 `;
 
