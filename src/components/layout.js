@@ -14,7 +14,7 @@ import './layout.css';
 
 const Content = styled.div`
   margin: 0 auto;
-  max-width: 860px;
+  //max-width: 860px;
   padding-top: 0;
 `;
 

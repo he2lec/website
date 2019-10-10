@@ -16,14 +16,16 @@ const ColumnResp = styled(Column)`
 `;
 
 const Button = styled.button`
-  ${tw`text-center w-full bg-white rounded px-6 py-4 md:py-2 hover:bg-black hover:text-white`}
+  ${tw`text-center font-bold w-full bg-white rounded px-6 py-4 md:py-2
+    hover:bg-black hover:text-white`}
   &:hover > * {
     ${tw`text-white`}
   }
 `;
 
 const Block = styled.div`
-  ${tw`text-center text-base w-full bg-white rounded tracking-tighter px-1 py-4 md:py-2 hover:bg-black hover:text-white inline-block`}
+  ${tw`text-center font-bold text-base w-full bg-white rounded tracking-tighter
+    px-1 py-4 md:py-2 hover:bg-black hover:text-white inline-block`}
 `;
 
 const Contact = () => (
