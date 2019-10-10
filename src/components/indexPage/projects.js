@@ -59,7 +59,7 @@ const Projects = () => (
     <Grid>
       <Column>
         <Card>
-          <CardImage src="./yakosa2.png" />
+          <CardImage src="./yakosa.png" />
           <CardContent>
             <CardTitle>
               YAKOSA <CardSubtitle>Full-Stack Mobile App</CardSubtitle>
