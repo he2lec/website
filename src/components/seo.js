@@ -10,6 +10,12 @@ import PropTypes from 'prop-types';
 import Helmet from 'react-helmet';
 import { useStaticQuery, graphql } from 'gatsby';
 
+import favicon from '../images/favicon/favicon.ico';
+import favicon16 from '../images/favicon/favicon16.png';
+import favicon32 from '../images/favicon/favicon32.png';
+import favicon96 from '../images/favicon/favicon96.png';
+import websiteIcon from '../images/icon.png';
+
 function SEO({ description, lang, meta, keywords, title }) {
   const { site } = useStaticQuery(
     graphql`
@@ -52,6 +58,10 @@ function SEO({ description, lang, meta, keywords, title }) {
           content: `website`,
         },
         {
+          property: `og:image`,
+          content: `${websiteIcon}`,
+        },
+        {
           name: `twitter:card`,
           content: `summary`,
         },
@@ -77,6 +87,28 @@ function SEO({ description, lang, meta, keywords, title }) {
             : [],
         )
         .concat(meta)}
+      link={[
+        {
+          rel: 'icon',
+          type: 'image/png',
+          sizes: '16x16',
+          href: `${favicon16}`,
+        },
+        {
+          rel: 'icon',
+          type: 'image/png',
+          sizes: '32x32',
+          href: `${favicon32}`,
+        },
+        {
+          rel: 'icon',
+          type: 'image/png',
+          sizes: '96x96',
+          href: `${favicon96}`,
+        },
+        { rel: 'shortcut icon', type: 'image/png', href: `${favicon96}` },
+        { rel: 'icon', href: `${favicon}` },
+      ]}
     />
   );
 }

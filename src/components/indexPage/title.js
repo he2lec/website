@@ -27,8 +27,7 @@ const Description = styled.p`
 `;
 
 const NameHeader = styled.h1`
-  font-size: 3.5rem;
-  margin-bottom: 0;
+  ${tw`mb-0 text-5xl sm:text-6xl`}
 `;
 
 const Title = () => (

@@ -2,6 +2,10 @@ import React from 'react';
 import styled from '@emotion/styled';
 import tw from 'tailwind.macro';
 
+import yakosaImage from '../../images/yakosa.png';
+import exercisesImage from '../../images/exercises.png';
+import spiderImage from '../../images/spider.jpg';
+
 const Title = styled.div`
   ${tw`text-white font-bold text-5xl mb-8`}
 `;
@@ -59,7 +63,7 @@ const Projects = () => (
     <Grid>
       <Column>
         <Card>
-          <CardImage src="./yakosa2.png" />
+          <CardImage src={yakosaImage} />
           <CardContent>
             <CardTitle>
               YAKOSA <CardSubtitle>Full-Stack Mobile App</CardSubtitle>
@@ -81,7 +85,7 @@ const Projects = () => (
 
       <Column>
         <Card>
-          <CardImage src="./exercises.png" />
+          <CardImage src={exercisesImage} />
           <CardContent>
             <CardTitle>
               Exercises <CardSubtitle>Full-Stack Web App</CardSubtitle>
@@ -101,7 +105,7 @@ const Projects = () => (
 
       <Column>
         <Card>
-          <CardImage src="./spider.jpg" />
+          <CardImage src={spiderImage} />
           <CardContent>
             <CardTitle>
               Spider <CardSubtitle>HTTP(S) Server</CardSubtitle>
