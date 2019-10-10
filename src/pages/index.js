@@ -1,12 +1,13 @@
 import React from 'react';
 
+import Layout from '../components/layout';
+import SEO from '../components/seo';
 import Title from '../components/indexPage/title';
 import Intro from '../components/indexPage/intro';
 import Contact from '../components/indexPage/contact';
-import Layout from '../components/layout';
-import SEO from '../components/seo';
 import Skills from '../components/indexPage/skills';
 import Projects from '../components/indexPage/projects';
+import Footer from '../components/indexPage/footer';
 
 import styled from '@emotion/styled';
 import tw from 'tailwind.macro';
@@ -100,6 +101,8 @@ const IndexPage = () => (
     <RegWidth>
       <Projects />
     </RegWidth>
+    <Space />
+    <Footer />
     <Space />
   </Layout>
 );

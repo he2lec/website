@@ -59,7 +59,7 @@ const Projects = () => (
     <Grid>
       <Column>
         <Card>
-          <CardImage src="./yakosa.jpg" />
+          <CardImage src="./yakosa2.png" />
           <CardContent>
             <CardTitle>
               YAKOSA <CardSubtitle>Full-Stack Mobile App</CardSubtitle>
@@ -81,7 +81,7 @@ const Projects = () => (
 
       <Column>
         <Card>
-          <CardImage src="./yakosa.jpg" />
+          <CardImage src="./exercises.png" />
           <CardContent>
             <CardTitle>
               Exercises <CardSubtitle>Full-Stack Web App</CardSubtitle>
@@ -101,7 +101,7 @@ const Projects = () => (
 
       <Column>
         <Card>
-          <CardImage src="./yakosa.jpg" />
+          <CardImage src="./spider.jpg" />
           <CardContent>
             <CardTitle>
               Spider <CardSubtitle>HTTP(S) Server</CardSubtitle>
