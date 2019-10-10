@@ -17,7 +17,11 @@ const ColumnResp = styled(Column)`
 
 const Button = styled.button`
   ${tw`text-center font-bold w-full bg-white rounded px-6 py-4 md:py-2
-    hover:bg-black hover:text-white`}
+    hover:bg-gray-900 hover:text-white transition-all transition-250 transition-ease`}
+  color: ${props => props.color};
+  &:hover {
+    transform: scale(1.05);
+  }
   &:hover > * {
     ${tw`text-white`}
   }
@@ -25,7 +29,7 @@ const Button = styled.button`
 
 const Block = styled.div`
   ${tw`text-center font-bold text-base w-full bg-white rounded tracking-tighter
-    px-1 py-4 md:py-2 hover:bg-black hover:text-white inline-block`}
+    px-1 py-4 md:py-2 hover:bg-gray-900 hover:text-white inline-block`}
 `;
 
 const Contact = () => (
@@ -36,12 +40,12 @@ const Contact = () => (
         target="_blank"
         rel="noopener noreferrer"
       >
-        <Button>Linkedin</Button>
+        <Button color="#0077b5">Linkedin</Button>
       </a>
     </Column>
     <Column>
-      <a href={withPrefix('/cv.pdf')}>
-        <Button>Resume</Button>
+      <a href={withPrefix('/cv.pdf')} target="_blank" rel="noopener noreferrer">
+        <Button color="#97266d">Resume</Button>
       </a>
     </Column>
     <ColumnResp>

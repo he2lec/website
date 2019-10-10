@@ -7,15 +7,18 @@ const Title = styled.div`
 `;
 
 const Grid = styled.div`
-  ${tw`flex flex-wrap -mx-3 overflow-hidden`}
+  ${tw`flex flex-wrap -mx-3`}
 `;
 
 const Column = styled.div`
-  ${tw`my-3 px-3 overflow-hidden w-full md:w-1/3`}
+  ${tw`my-3 px-3 w-full md:w-1/3`}
 `;
 
 const Card = styled.div`
-  ${tw`rounded bg-white overflow-hidden shadow-lg p-4`}
+  ${tw`rounded text-black bg-white overflow-hidden shadow-lg p-4 transition-all transition-250 transition-ease`}
+  &:hover {
+    transform: scale(1.05);
+  }
 `;
 
 const CardTitle = styled.div`
@@ -66,6 +69,9 @@ const Skills = () => (
           <Skill>Flutter</Skill>
           <Skill>Django</Skill>
           <SpecialSkill>NodeJS</SpecialSkill>
+          <Skill>Netlify</Skill>
+          <Skill>Heroku</Skill>
+          <Skill>Travis CI</Skill>
         </Card>
       </Column>
 
