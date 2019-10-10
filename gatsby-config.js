@@ -1,8 +1,8 @@
 module.exports = {
   siteMetadata: {
     title: `Adrien Hellec`,
-    description: `Profile website of Adrien Hellec.`,
-    author: `Adrien Hellec <adrien.hellec@epita.fr>`,
+    description: `Profile website of Adrien Hellec. I am a French engineer student in computer science. Loving DevOps and Full-Stack (Frontend and Backend) Web/Software developpement in Javascript.`,
+    author: `Adrien Hellec <adrienhellec.pro@gmail.com>`,
   },
   plugins: [
     `gatsby-plugin-react-helmet`,

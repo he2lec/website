@@ -4,47 +4,49 @@ import tw from 'tailwind.macro';
 
 const OuterContainer = styled.div`
   ${tw`text-white mt-32`}
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: row;
 `;
 
-const Content = styled.span`
-  ${tw`text-white text-lg text-justify leading-relaxed px-8`}
+const Content = styled.div`
+  ${tw`text-white text-lg text-justify leading-relaxed px-8 font-light`}
   font-family: Lato;
 `;
 
 const Big = styled.div`
-  ${tw`text-5xl font-bold`}
-  text-shadow: 0px 0px 5px rgba(0, 0, 0, 0.15);
+  ${tw`text-5xl font-bold mb-2`}
 `;
 
 const Strong = styled.span`
-  ${tw`font-bold`}
-  text-shadow: 0px 0px 2px rgba(0, 0, 0, 0.6);
+  ${tw`font-black`}
+  font-family: Roboto;
 `;
 
-const LineSpace = styled.div`
-  ${tw`p-2`}
+// eslint-disable-next-line jsx-a11y/anchor-has-content
+const StyledLink = styled(props => <a {...props} />)`
+  ${tw`border-dotted border-b border-white no-underline text-white`}
 `;
 
 const Intro = () => (
   <OuterContainer>
     <Content>
       <Big>Hello,</Big>
-      I'm <Strong>Adrien Hellec</Strong>, a 5th year{' '}
-      <Strong>engineering student</Strong> in a{' '}
-      <Strong>computer science</Strong> school located in{' '}
-      <Strong>Paris, France</Strong>. I'm specialized in{' '}
-      <Strong>Web/Software development</Strong> and <Strong>DevOps</Strong> and
-      i'm currently teaching C/C++/Unix and project management to 3rd year
-      students. Always interested in{' '}
-      <Strong>discovering new technologies</Strong>, like React JS, Flutter and
-      more.
-      <LineSpace />
-      You will find contact information, my skills and some of the most
-      interesting projects i made, just below.
+      I’m a French <Strong>engineering student</Strong> in computer science at{' '}
+      <StyledLink
+        href="https://epita.fr"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        EPITA
+      </StyledLink>{' '}
+      and teaching C/C++/Unix to 3rd year students. I am very curious about
+      learning and trying <Strong>new technologies</Strong>, for which i can
+      adapt and develop my skills quickly. I'm skilled in many IT domains, but i
+      have a preference for <Strong>web development</Strong> in Javascript and{' '}
+      <Strong>DevOps</Strong>. I'm experienced in <Strong>teamwork</Strong>,
+      either as a leader or as a team member, particularly through my experience
+      as a C/C++/Unix <Strong>teacher</Strong> during which I have improved my
+      ability to manage team conflicts and deadlines. Beyond that, I am
+      concerned about <Strong>world issues</Strong> such as social and gender
+      inequalities, as well as climate change.
     </Content>
   </OuterContainer>
 );

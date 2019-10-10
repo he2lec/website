@@ -5,7 +5,11 @@ import styled from '@emotion/styled';
 import tw from 'tailwind.macro';
 
 const Container = styled.div`
-  text-align: center;
+  ${tw`text-center transition-all transition-ease`}
+  transition-duration: 10s;
+  &:hover {
+    transform: scale(1.2);
+  }
 `;
 
 const OuterContainer = styled.div`
@@ -42,7 +46,7 @@ const Title = () => (
       <OuterContainer>
         <Container>
           <NameHeader>{data.site.siteMetadata.title}</NameHeader>
-          <Description>Software Developer</Description>
+          <Description>Software Engineer</Description>
         </Container>
       </OuterContainer>
     )}
