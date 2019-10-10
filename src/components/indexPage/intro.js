@@ -12,12 +12,12 @@ const Content = styled.div`
 `;
 
 const Big = styled.div`
-  ${tw`text-5xl font-bold mb-2`}
+  ${tw`text-4xl sm:text-5xl font-bold mb-2`}
 `;
 
 const Strong = styled.span`
   ${tw`font-black`}
-  font-family: Roboto;
+  font-family: 'Roboto', 'Avenir', 'Helvetica', 'sans-serif';
 `;
 
 // eslint-disable-next-line jsx-a11y/anchor-has-content
