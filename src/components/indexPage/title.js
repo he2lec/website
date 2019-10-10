@@ -20,10 +20,8 @@ const OuterContainer = styled.div`
   flex-direction: row;
 `;
 
-const Description = styled.p`
-  padding: 0;
-  margin-bottom: 1rem;
-  font-size: 1.4rem;
+const Description = styled.h1`
+  ${tw`p-0 mb-8 text-xl font-normal`}
 `;
 
 const NameHeader = styled.h1`

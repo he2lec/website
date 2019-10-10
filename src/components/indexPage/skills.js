@@ -2,7 +2,7 @@ import React from 'react';
 import styled from '@emotion/styled';
 import tw from 'tailwind.macro';
 
-const Title = styled.div`
+const Title = styled.h2`
   ${tw`text-white font-bold text-5xl mb-8`}
 `;
 
