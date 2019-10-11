@@ -4,7 +4,7 @@ import tw from 'tailwind.macro';
 import { withPrefix } from 'gatsby';
 
 const Grid = styled.div`
-  ${tw`flex flex-wrap -mx-3 overflow-hidden mb-4 mt-8 px-8`}
+  ${tw`flex flex-wrap overflow-hidden mb-4 mt-8 px-5`}
 `;
 
 const Column = styled.div`
@@ -33,25 +33,31 @@ const Block = styled.div`
 `;
 
 const Contact = () => (
-  <Grid>
-    <Column>
-      <a
-        href="https://linkedin.com/in/adrienhellec"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        <Button color="#0077b5">Linkedin</Button>
-      </a>
-    </Column>
-    <Column>
-      <a href={withPrefix('/cv.pdf')} target="_blank" rel="noopener noreferrer">
-        <Button color="#97266d">Resume</Button>
-      </a>
-    </Column>
-    <ColumnResp>
-      <Block>adrienhellec.pro@gmail.com</Block>
-    </ColumnResp>
-  </Grid>
+  <>
+    <Grid>
+      <Column>
+        <a
+          href="https://linkedin.com/in/adrienhellec"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <Button color="#0077b5">Linkedin</Button>
+        </a>
+      </Column>
+      <Column>
+        <a
+          href={withPrefix('/cv.pdf')}
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <Button color="#97266d">Resume</Button>
+        </a>
+      </Column>
+      <ColumnResp>
+        <Block>adrienhellec.pro@gmail.com</Block>
+      </ColumnResp>
+    </Grid>
+  </>
 );
 
 export default Contact;
